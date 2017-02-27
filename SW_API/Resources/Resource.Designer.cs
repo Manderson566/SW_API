@@ -60,8 +60,8 @@ namespace SW_API
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050007
-			public const int CharLV = 2131034119;
+			// aapt resource value: 0x7f050008
+			public const int LV = 2131034120;
 			
 			// aapt resource value: 0x7f050001
 			public const int characterHeightTXT = 2131034113;
@@ -78,14 +78,71 @@ namespace SW_API
 			// aapt resource value: 0x7f050005
 			public const int getCharsBTN = 2131034117;
 			
+			// aapt resource value: 0x7f050007
+			public const int getPlanetsBTN = 2131034119;
+			
 			// aapt resource value: 0x7f050004
 			public const int getSection = 2131034116;
 			
 			// aapt resource value: 0x7f050006
 			public const int getSpeciesBTN = 2131034118;
 			
-			// aapt resource value: 0x7f050008
-			public const int speciesNameTXT = 2131034120;
+			// aapt resource value: 0x7f05000d
+			public const int planetsClimateTXT = 2131034125;
+			
+			// aapt resource value: 0x7f05000c
+			public const int planetsDiameterTXT = 2131034124;
+			
+			// aapt resource value: 0x7f05000e
+			public const int planetsGravityTXT = 2131034126;
+			
+			// aapt resource value: 0x7f050009
+			public const int planetsInfoNameTXT = 2131034121;
+			
+			// aapt resource value: 0x7f050012
+			public const int planetsNameTXT = 2131034130;
+			
+			// aapt resource value: 0x7f05000b
+			public const int planetsOrbitalTXT = 2131034123;
+			
+			// aapt resource value: 0x7f050011
+			public const int planetsPopulationTXT = 2131034129;
+			
+			// aapt resource value: 0x7f05000a
+			public const int planetsRotationTXT = 2131034122;
+			
+			// aapt resource value: 0x7f050010
+			public const int planetsSurfaceTXT = 2131034128;
+			
+			// aapt resource value: 0x7f05000f
+			public const int planetsTerrainTXT = 2131034127;
+			
+			// aapt resource value: 0x7f050014
+			public const int speciesClassTXT = 2131034132;
+			
+			// aapt resource value: 0x7f050015
+			public const int speciesDesignationTXT = 2131034133;
+			
+			// aapt resource value: 0x7f050019
+			public const int speciesEyeTXT = 2131034137;
+			
+			// aapt resource value: 0x7f050018
+			public const int speciesHairTXT = 2131034136;
+			
+			// aapt resource value: 0x7f050016
+			public const int speciesHeightTXT = 2131034134;
+			
+			// aapt resource value: 0x7f050013
+			public const int speciesInfoNameTXT = 2131034131;
+			
+			// aapt resource value: 0x7f05001a
+			public const int speciesLifeTXT = 2131034138;
+			
+			// aapt resource value: 0x7f05001b
+			public const int speciesNameTXT = 2131034139;
+			
+			// aapt resource value: 0x7f050017
+			public const int speciesSkinTXT = 2131034135;
 			
 			static Id()
 			{
@@ -110,7 +167,16 @@ namespace SW_API
 			public const int Main = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int SpeciesView = 2130903043;
+			public const int PlanetsInfoView = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int PlanetsView = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int SpeciesInfoView = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int SpeciesView = 2130903046;
 			
 			static Layout()
 			{

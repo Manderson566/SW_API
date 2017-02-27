@@ -1,25 +1,32 @@
-
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
 using Android.Content;
+using Android.OS;
+using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SW_API.Models;
 
-namespace SW_API
+namespace SW_API.Adapters
 {
-    class CharactersAdapter : BaseAdapter<Characters>
+    class PlanetsAdapter : BaseAdapter<Planets>
     {
-        private List<Characters> listItems;
+        private List<Planets> listItems;
         Context myContext;
 
-        public CharactersAdapter(Context context, List<Characters> items)
+
+        public PlanetsAdapter(Context context, List<Planets> items)
         {
             listItems = items;
             myContext = context;
 
         }
 
-        public override Characters this[int position]
+        public override Planets this[int position]
         {
             get
             {
@@ -45,19 +52,16 @@ namespace SW_API
             View row = convertView;
             if (row == null)
             {
-                row = LayoutInflater.From(myContext).Inflate(Resource.Layout.CharactersView, null, false);
+                row = LayoutInflater.From(myContext).Inflate(Resource.Layout.PlanetsView, null, false);
             }
 
 
 
-            TextView characterNameTxt = row.FindViewById<TextView>(Resource.Id.characterNameTXT);
-            characterNameTxt.Text = listItems[position].Name;
+            TextView PlanetsNameTxt = row.FindViewById<TextView>(Resource.Id.planetsNameTXT);
+            PlanetsNameTxt.Text = listItems[position].Name;
 
             return row;
-            
+
         }
     }
 }
-
-
-          

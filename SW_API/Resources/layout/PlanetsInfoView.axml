@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+      android:text=""
+      android:layout_width="match_parent"
+      android:layout_weight="10"
+      android:layout_height="wrap_content"
+      android:id="@+id/planetsInfoNameTXT"
+      android:height="59dp"
+      android:textSize="19dp" />
+  <TextView
+      android:text=""
+      android:layout_width="match_parent"
+      android:layout_weight="10"
+      android:layout_height="wrap_content"
+      android:id="@+id/planetsRotationTXT"
+      android:height="59dp"
+      android:textSize="19dp" />
+  <TextView
+      android:text=""
+      android:layout_width="match_parent"
+      android:layout_weight="10"                        
+      android:layout_height="wrap_content"
+      android:id="@+id/planetsOrbitalTXT"
+      android:height="59dp"
+      android:textSize="19dp" />
+  <TextView
+      android:text=""
+      android:layout_width="match_parent"
+      android:layout_weight="10"
+      android:layout_height="wrap_content"
+      android:id="@+id/planetsDiameterTXT"
+      android:height="59dp"
+      android:textSize="19dp" />
+  <TextView
+      android:text=""
+      android:layout_width="match_parent"
+      android:layout_weight="10"
+      android:layout_height="wrap_content"
+      android:id="@+id/planetsClimateTXT"
+      android:height="59dp"
+      android:textSize="19dp" />
+  <TextView
+      android:text=""
+      android:layout_width="match_parent"
+      android:layout_weight="10"
+      android:layout_height="wrap_content"
+      android:id="@+id/planetsGravityTXT"
+      android:height="59dp"
+      android:textSize="19dp" />
+  <TextView
+      android:text=""
+      android:layout_width="match_parent"
+      android:layout_weight="10"
+      android:layout_height="wrap_content"
+      android:id="@+id/planetsTerrainTXT"
+      android:height="59dp"
+      android:textSize="19dp" />
+  <TextView
+      android:text=""
+      android:layout_width="match_parent"
+      android:layout_weight="10"
+      android:layout_height="wrap_content"
+      android:id="@+id/planetsSurfaceTXT"
+      android:height="59dp"
+      android:textSize="19dp" />
+  <TextView
+     android:text=""
+     android:layout_width="match_parent"
+     android:layout_weight="10"
+     android:layout_height="wrap_content"
+     android:id="@+id/planetsPopulationTXT"
+     android:height="59dp"
+     android:textSize="19dp" />
+</LinearLayout>
+

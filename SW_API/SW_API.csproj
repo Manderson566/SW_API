@@ -60,10 +60,15 @@
   <ItemGroup>
     <Compile Include="Adapters\CharacterInfoAdapter.cs" />
     <Compile Include="Adapters\CharactersAdapter.cs" />
+    <Compile Include="Adapters\PlanetsAdapter.cs" />
+    <Compile Include="Adapters\PlanetsInfoAdapter.cs" />
     <Compile Include="MAIN\MainActivity.cs" />
     <Compile Include="Adapters\SpeciesAdapter.cs" />
+    <Compile Include="Adapters\SpeciesInfoAdapter.cs" />
     <Compile Include="Models\Characters.cs" />
-    <Compile Include="MAIN\Resource.Designer.cs" />
+    <Compile Include="Models\Planets.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Models\Species.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +83,15 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SpeciesView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SpeciesInfoView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PlanetsView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PlanetsInfoView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

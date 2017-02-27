@@ -6,27 +6,32 @@
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:id="@+id/getSection">
+    <Button
+        android:id="@+id/getCharsBTN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:onClick="GetChars"
+        android:text="Characters" />
+    <Button
+        android:id="@+id/getSpeciesBTN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:onClick="GetSpecies"
+        android:text="Species" />
   <Button
-      android:id="@+id/getCharsBTN"
-      android:layout_width="300dp"
-      android:layout_height="wrap_content"
-      android:gravity="center_horizontal"
-      android:textAppearance="?android:attr/textAppearanceLarge"
-      android:onClick="GetChars"
-      android:text="Characters" />
-  <Button
-      android:id="@+id/getSpeciesBTN"
-      android:layout_width="300dp"
-      android:layout_height="wrap_content"
-      android:gravity="center_horizontal"
-      android:textAppearance="?android:attr/textAppearanceLarge"
-      android:onClick="GetChars"
-      android:text="Species" />
-  <ListView 
-      
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:id="@+id/CharLV" />
-
+        android:id="@+id/getPlanetsBTN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:onClick="GetPlanets"
+        android:text="Planets" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LV" />
 </LinearLayout>
-

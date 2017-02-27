@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:id="@+id/speciesInfoNameTXT"
+        android:height="59dp"
+        android:textSize="19dp" />
+  <TextView
+      android:text=""
+      android:layout_width="match_parent"
+      android:layout_weight="10"
+      android:layout_height="wrap_content"
+      android:id="@+id/speciesClassTXT"
+      android:height="59dp"
+      android:textSize="19dp" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:id="@+id/speciesDesignationTXT"
+        android:height="59dp"
+        android:textSize="19dp" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:id="@+id/speciesHeightTXT"
+        android:height="59dp"
+        android:textSize="19dp" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:id="@+id/speciesSkinTXT"
+        android:height="59dp"
+        android:textSize="19dp" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:id="@+id/speciesHairTXT"
+        android:height="59dp"
+        android:textSize="19dp" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:id="@+id/speciesEyeTXT"
+        android:height="59dp"
+        android:textSize="19dp" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:id="@+id/speciesLifeTXT"
+        android:height="59dp"
+        android:textSize="19dp" />
+</LinearLayout>
