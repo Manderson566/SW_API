@@ -60,9 +60,10 @@
   <ItemGroup>
     <Compile Include="Adapters\CharacterInfoAdapter.cs" />
     <Compile Include="Adapters\CharactersAdapter.cs" />
-    <Compile Include="MainActivity.cs" />
+    <Compile Include="MAIN\MainActivity.cs" />
+    <Compile Include="Adapters\SpeciesAdapter.cs" />
     <Compile Include="Models\Characters.cs" />
-    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="MAIN\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,10 +71,13 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\CharactersView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\CharacterInfoView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\CharactersView.axml">
+    <AndroidResource Include="Resources\layout\SpeciesView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

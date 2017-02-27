@@ -9,58 +9,52 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Java.Lang;
 using SW_API.Models;
 
 namespace SW_API.Adapters
 {
-    class CharacterInfoAdapter : BaseAdapter<Characters>
+    class CharacterInfoAdapter :BaseAdapter<Characters>
     {
-        private List<Characters> listItems;
-        Context myContext;
+        Characters[] characters;
+        Activity context;
 
-        public CharacterInfoAdapter(Context context, List<Characters> items)
+        public CharacterInfoAdapter(Activity context, Characters[] characters): base() 
         {
-            listItems = items;
-            myContext = context;
-
-        }
-
-
-        public override Characters this[int position]
-        {
-            get
-            {
-                return listItems[position];
-            }
-        }
-
-        public override int Count
-        {
-            get
-            {
-                return listItems.Count;
-            }
+            this.context = context;
+            this.characters = characters;
         }
 
         public override long GetItemId(int position)
         {
             return position;
         }
-
+        public override Characters this[int position]
+        {
+            get { return characters[position]; }
+        }
+        public override int Count
+        {
+            get { return characters.Length; }
+        }
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             View row = convertView;
             if (row == null)
             {
-                row = LayoutInflater.From(myContext).Inflate(Resource.Layout.CharactersView, null, false);
+                row = LayoutInflater.From(context).Inflate(Resource.Layout.CharacterInfoView, null, false);
             }
+            TextView characterNameTxt = row.FindViewById<TextView>(Resource.Id.characterInfoNameTXT);
+            characterNameTxt.Text = $"Name: { characters[position].Name}";
 
+            TextView characterHeightTxt = row.FindViewById<TextView>(Resource.Id.characterHeightTXT);
+            characterHeightTxt.Text = $"Height: { characters[position].Height}";
 
-
-            TextView characterNameTxt = row.FindViewById<TextView>(Resource.Id.characterNameTXT);
-            characterNameTxt.Text = listItems[position].Name;
+            TextView characterWeightTxt = row.FindViewById<TextView>(Resource.Id.characterWeightTXT);
+            characterWeightTxt.Text = $"Mass: { characters[position].Mass}";
 
             return row;
+
         }
     }
 }

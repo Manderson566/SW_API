@@ -14,6 +14,14 @@
       android:textAppearance="?android:attr/textAppearanceLarge"
       android:onClick="GetChars"
       android:text="Characters" />
+  <Button
+      android:id="@+id/getSpeciesBTN"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:onClick="GetChars"
+      android:text="Species" />
   <ListView 
       
       android:layout_width="match_parent"
